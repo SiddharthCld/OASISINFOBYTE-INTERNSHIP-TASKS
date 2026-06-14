@@ -1,4 +1,4 @@
-#  PizzaCraft — Pizza Delivery Web Application
+# PizzaCraft — Pizza Delivery Web Application
 
 A full-stack **pizza delivery** web application built with **React** and **Express.js**. Users can build custom pizzas by choosing from a variety of bases, sauces, cheeses, veggies, and meats — then pay securely with **Razorpay** and track their order in real time. Admins get a dedicated dashboard to manage inventory and process orders.
 
@@ -6,23 +6,23 @@ A full-stack **pizza delivery** web application built with **React** and **Expre
 
 ---
 
-##  Features
+## Features
 
-### 🛒 Customer Side
+### Customer Side
 - **Custom Pizza Builder** — Choose a base, sauce, cheese, veggies, and meats to create your perfect pizza
 - **Real-Time Pricing** — See the total update live as you add or remove toppings
 - **Secure Checkout** — Pay online through Razorpay payment gateway integration
 - **Order Tracking** — Track order status: *Order Received → In the Kitchen → Sent to Delivery → Delivered*
 - **Order History** — View all past orders with full details
 
-###  Authentication & Security
+### Authentication & Security
 - **User Registration & Login** — JWT-based authentication with role-based access (user / admin)
 - **Email Verification** — Account verification via email link
 - **Forgot / Reset Password** — Secure password recovery flow with time-limited tokens
 - **Firebase Integration** — Firebase for enhanced authentication support
 - **Protected Routes** — Route guards for authenticated and admin-only pages
 
-###  Admin Dashboard
+### Admin Dashboard
 - **Dashboard Overview** — View key metrics and order statistics at a glance
 - **Inventory Management** — Full CRUD operations on pizza ingredients across 5 categories
 - **Order Management** — View all orders and update their status through the delivery pipeline
@@ -30,7 +30,7 @@ A full-stack **pizza delivery** web application built with **React** and **Expre
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 | Layer        | Technology                                                                 |
 |:-------------|:---------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ A full-stack **pizza delivery** web application built with **React** and **Expre
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 pizza-delivery/
@@ -121,7 +121,7 @@ pizza-delivery/
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -211,7 +211,7 @@ The app will be available at `http://localhost:5173`.
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication — `/api/auth`
 
@@ -255,7 +255,7 @@ The app will be available at `http://localhost:5173`.
 
 ---
 
-##  Database Models
+## Database Models
 
 ### User
 - `name`, `email`, `password` (hashed with bcryptjs, salt round 12)
@@ -279,14 +279,14 @@ The app will be available at `http://localhost:5173`.
 
 ---
 
-##  Background Services
+## Background Services
 
 ### Stock Monitor
 A **cron job** runs every **30 minutes** to scan the inventory for items whose quantity has fallen below their configured threshold. When low-stock items are detected, an **alert email** is automatically sent to the admin via Nodemailer.
 
 ---
 
-##  Available Scripts
+## Available Scripts
 
 ### Server (`/server`)
 
@@ -306,7 +306,7 @@ A **cron job** runs every **30 minutes** to scan the inventory for items whose q
 
 ---
 
-##  Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -316,12 +316,6 @@ A **cron job** runs every **30 minutes** to scan the inventory for items whose q
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **ISC License**.
-
----
-
-<p align="center">
-  Made with ❤️ 
-</p>

@@ -1,0 +1,45 @@
+# ─── Dependencies ────────────────────────────────────────────────
+node_modules/
+
+# ─── Environment variables (SENSITIVE — never commit!) ───────────
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.*.local
+
+# ─── Build output ────────────────────────────────────────────────
+dist/
+build/
+
+# ─── Logs ────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── OS files ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── IDE / Editor ────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ─── Package manager locks (keep ONE — you have package-lock) ───
+yarn.lock
+pnpm-lock.yaml
+
+# ─── Coverage & testing ─────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ─── Misc ────────────────────────────────────────────────────────
+*.tgz
+.cache/
